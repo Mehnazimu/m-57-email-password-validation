@@ -6,18 +6,18 @@ import app from './firebase/firebase.init';
 
 const auth = getAuth(app);
 
-const handleRegister =(event)=>{
-   event.preventDefault();
-   const email =event.target.email.value;
-   const password= event.target.password.value;
-   console.log(email,password)
+const handleRegister = (event) => {
+  event.preventDefault();
+  const email = event.target.email.value;
+  const password = event.target.password.value;
+  console.log(email, password)
 }
 
-const handleEmailBlur = event =>{
+const handleEmailBlur = event => {
   console.log(event.target.value);
 }
 
-const handlePasswordBlur = event =>{
+const handlePasswordBlur = event => {
   console.log(event.target.value);
 }
 
@@ -25,9 +25,9 @@ const handlePasswordBlur = event =>{
 function App() {
   return (
     <div className="">
-    <RegisterReactBootstrap></RegisterReactBootstrap>
-     
-      
+      <RegisterReactBootstrap></RegisterReactBootstrap>
+
+
 
     </div>
   );
