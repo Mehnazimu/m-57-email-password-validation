@@ -6,7 +6,7 @@ import app from '../firebase/firebase.init.js'
 
 
 const auth = getAuth(app);
-const [passwordError, setPasswordError] = useState('')
+const [passwordError, setPasswordError] = useState('');
 
 const handleRegister = event => {
   event.preventDefault();
